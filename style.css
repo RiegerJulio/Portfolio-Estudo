@@ -16,6 +16,8 @@
     --font-action: "Mulish", serif;
 }
 
+html{scroll-behavior: smooth;}
+
 .hamburger {
     /* background-color: red; */
     width: 2rem;
@@ -183,6 +185,7 @@ header {
     top: 0;
     right: -20rem;
     transition: all 0.7s;
+    z-index: 99;
 }
 
 .show-menu .sidebar{
@@ -277,6 +280,7 @@ header {
 }
 
 .sessao-header{
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,7 +446,7 @@ header {
 }
 
 .sessao-contato h1{
-    width 100%;
+    width: 100%;
     text-align: center;
     font-family: var(--font-primary);
     color: darkred;
@@ -504,4 +508,66 @@ header {
     width: 90%;
     height: 1.5rem;
     margin-top: 1rem;
+}
+
+.container-mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frase-convite{
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    margin-top: 1rem;
+
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #000009;
 }
